@@ -1,16 +1,3 @@
-# React + Vite
+Lab 2 – Interactive Map (React + Leaflet)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+For this lab, I created an interactive map application using React and Leaflet. The user can click anywhere on the map to add a marker. After clicking, they are prompted to enter a name and optional notes for that location. The marker is then added to the map and also displayed in a side panel with its coordinates and information. The application includes a “Done” button to stop adding new markers and hide the side panel, and a “Reset” button to clear all saved locations. Users can edit or delete locations after they are added. I also implemented a screenshot mode that opens all marker popups at the same time so the user can take a screenshot of all entered locations. The project was built using React, Vite, Leaflet, and OpenStreetMap, with custom CSS styling for a dark theme. To run the project, install dependencies using npm install and start the development server with npm run dev. One challenge I faced was configuring the default Leaflet marker icons correctly in Vite, and another was styling the popup components to match the dark theme. Overall, this lab helped me understand how to manage state in React and work with an interactive map library.
